@@ -32,12 +32,19 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px; /* Slightly more padding for readability */
     text-align: left;
 }
 
 th {
     background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Optional: Emphasize the subject area */
+.contact-table td:first-child {
+    font-weight: bold;
+    color: #0056b3; /* A slight blue tint */
 }
 
 code {
