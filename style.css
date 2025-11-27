@@ -53,3 +53,37 @@ code {
     border-radius: 3px;
     font-size: 0.9em;
 }
+
+/* Style for the search container */
+.search-container {
+    padding: 10px 0;
+    text-align: right; /* Places the search box on the right */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* Style for the search input field */
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px; /* Rounded left corners */
+    width: 200px; /* Adjust width as needed */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Style for the search button */
+.search-container button {
+    padding: 8px 15px;
+    background-color: #007bff; /* Use your primary color */
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 0 4px 4px 0; /* Rounded right corners */
+    cursor: pointer;
+    margin-left: -5px; /* Pulls the button into the input field for a seamless look */
+    font-size: 14px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
