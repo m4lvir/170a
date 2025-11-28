@@ -87,6 +87,12 @@ code {
 .search-container button:hover {
     background-color: #0056b3;
 }
+/* Universal rule to make all images responsive */
+img {
+    max-width: 100%; /* Ensures the image never exceeds its container's width */
+    height: auto;    /* Maintains the image's aspect ratio to prevent distortion */
+    display: block;  /* Helps with layout consistency */
+}
 
 /* Styling for the AI Persona Context */
 .persona-context {
@@ -95,6 +101,8 @@ code {
     padding: 10px 15px;
     margin: 15px 0;
     border-radius: 4px;
+    max-width: 100%; 
+    box-sizing: border-box; /* Crucial: Ensures padding/border are included in the 100% width */
 }
 
 .persona-focus {
