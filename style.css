@@ -161,7 +161,7 @@ img {
         word-break: break-all; /* Forces hash to break onto a new line */
         white-space: normal;  /* Overrides any 'no-wrap' default on <td> or <code> */
         text-align: right;
-        padding-left: 40%;
+        padding-left: 30%;
         position: relative; /* These properties should also be here for proper mobile TD styling */
     }
     
@@ -181,7 +181,7 @@ img {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
-        padding-left: 40%; /* Make space for the pseudo-label */
+        padding-left: 30%; /* Make space for the pseudo-label */
         text-align: right;
     }
     
@@ -191,7 +191,7 @@ img {
         content: attr(data-label); 
         position: absolute;
         left: 0;
-        width: 35%;
+        width: 25%;
         padding-left: 10px;
         font-weight: bold;
         text-align: left;
