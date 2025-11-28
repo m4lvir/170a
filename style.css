@@ -102,3 +102,38 @@ code {
     color: #555;
     margin-top: 5px;
 }
+
+/* --- MOBILE SPECIFIC STYLES (Max Width 600px) --- */
+@media (max-width: 600px) {
+
+    /* 1. General Body and Containers */
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+    
+    /* 2. Navigation (Make links stack vertically) */
+    nav a {
+        display: block; /* Forces links onto new lines */
+        padding: 8px 5px; /* Adjust padding for easier tapping */
+        margin: 5px 0;
+        border-bottom: 1px solid #eee; /* Add separator */
+    }
+
+    /* 3. Search Bar (Make it full width) */
+    .search-container {
+        text-align: center; /* Center the search form */
+        padding: 15px 0;
+    }
+    
+    .search-container input[type="text"] {
+        width: 80%; /* Input takes up most of the width */
+        border-radius: 4px; 
+    }
+    
+    .search-container button {
+        margin-top: 5px; /* Moves button to a new line */
+        width: 80%;
+        border-radius: 4px;
+        margin-left: 0;
+    }
+}
