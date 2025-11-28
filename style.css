@@ -161,7 +161,7 @@ img {
         word-break: break-all; /* Forces hash to break onto a new line */
         white-space: normal;  /* Overrides any 'no-wrap' default on <td> or <code> */
         text-align: right;
-        padding-left: 20%;
+        padding-left: 40%;
         position: relative; /* These properties should also be here for proper mobile TD styling */
     }
     
