@@ -136,4 +136,41 @@ code {
         border-radius: 4px;
         margin-left: 0;
     }
+
+    /* 4. Responsive Tables (Transforms rows into blocks) */
+    table, thead, tbody, th, td, tr {
+        display: block; /* Turns all table elements into stacking blocks */
+    }
+    
+    /* Hide table headers (because they are now labels) */
+    thead {
+        display: none;
+    }
+    
+    /* Style the table rows */
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+    }
+    
+    /* Style the table data cells */
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%; /* Make space for the pseudo-label */
+        text-align: right;
+    }
+    
+    /* Use the header text as the label for each row (ADVANCED) */
+    td::before {
+        /* This section is advanced, but allows you to add the column name */
+        content: attr(data-label); 
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
