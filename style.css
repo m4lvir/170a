@@ -138,13 +138,23 @@ code {
     }
 
     /* 4. Responsive Tables (Transforms rows into blocks) */
-    .responsive-table, .responsive-table thead, .responsive-table tbody, 
-    .responsive-table th, .responsive-table td, .responsive-table td code {
-        word-break: break-all; 
-        /* Ensure normal wrapping is also enabled */
-        white-space: normal;
-    }, .responsive-table tr {
+    .responsive-table, 
+    .responsive-table thead, 
+    .responsive-table tbody, 
+    .responsive-table th, 
+    .responsive-table td, 
+    .responsive-table tr {
         display: block; /* Turns all table elements into stacking blocks */
+    }
+
+    /* 2. HASH WRAPPING RULE: Fixes long text (like SHA256) from scrolling off-screen */
+    .responsive-table td, 
+    .responsive-table td code {
+        word-break: break-all; /* Forces hash to break onto a new line */
+        white-space: normal;  /* Overrides any 'no-wrap' default on <td> or <code> */
+        text-align: right;
+        padding-left: 50%;
+        position: relative; /* These properties should also be here for proper mobile TD styling */
     }
     
     /* Hide table headers (because they are now labels) */
