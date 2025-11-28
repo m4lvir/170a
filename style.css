@@ -181,7 +181,7 @@ img {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
-        padding-left: 50%; /* Make space for the pseudo-label */
+        padding-left: 20%; /* Make space for the pseudo-label */
         text-align: right;
     }
     
