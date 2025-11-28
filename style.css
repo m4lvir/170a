@@ -139,7 +139,7 @@ code {
 
     /* 4. Responsive Tables (Transforms rows into blocks) */
     .responsive-table, .responsive-table thead, .responsive-table tbody, 
-    .responsive-table th, .responsive-table td {
+    .responsive-table th, .responsive-table td, .responsive-table td code {
         word-break: break-all; 
         /* Ensure normal wrapping is also enabled */
         white-space: normal;
