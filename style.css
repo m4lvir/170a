@@ -138,7 +138,8 @@ code {
     }
 
     /* 4. Responsive Tables (Transforms rows into blocks) */
-    table, thead, tbody, th, td, tr {
+    .responsive-table, .responsive-table thead, .responsive-table tbody, 
+    .responsive-table th, .responsive-table td, .responsive-table tr {
         display: block; /* Turns all table elements into stacking blocks */
     }
     
